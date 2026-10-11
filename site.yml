@@ -1,0 +1,6 @@
+---
+- name: Apply baseline hardening to Azure VMs
+  hosts: all
+  become: true
+  roles:
+    - baseline
