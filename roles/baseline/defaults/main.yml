@@ -1,0 +1,8 @@
+---
+baseline_ssh_port: 22
+baseline_allowed_ports:
+  - 80
+  - 443
+baseline_timezone: "Etc/UTC"
+baseline_disable_root_login: true
+baseline_disable_password_auth: true
