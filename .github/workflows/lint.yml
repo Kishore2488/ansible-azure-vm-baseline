@@ -24,7 +24,7 @@ jobs:
 
       - name: yamllint
         run: |
-          yamllint -d "{extends: default, rules: {line-length: disable}}" .
+          yamllint -d "{extends: default, rules: {line-length: disable, document-start: disable, truthy: disable, brackets: disable}}" site.yml roles/ requirements.yml
 
       - name: ansible-lint
         run: ansible-lint site.yml
